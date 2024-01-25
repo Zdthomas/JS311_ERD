@@ -69,10 +69,16 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+Both have the actor_id INT. Also, I think actor is the container for film_actor since it has what I think the branching cardinality towards 
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
+According to the graph, it means it's not a NOT NULL simple attribute.
+
+
 3. How many foreign keys does the "payments" table have? How can you tell?
+
+  3? They are highlighted when you hover over the payments table.
 
 ##### ER Diagram upload
 
